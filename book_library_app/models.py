@@ -99,7 +99,7 @@ class Book(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(50), nullable=False)
     isbn = db.Column(db.BigInteger, nullable=False, unique=True)
-    number_of_pager = db.Column(db.Integer, nullable=False)
+    number_of_pages = db.Column(db.Integer, nullable=False)
     description = db.Column(db.Text)
     author_id = db.Column(db.Integer, db.ForeignKey('authors.id'), nullable=False)
     author = db.relationship('Author', back_populates='books')
