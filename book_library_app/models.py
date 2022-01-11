@@ -68,3 +68,4 @@ class BooksSchema(Schema):
 
 
 author_schema = AuthorsSchema()
+book_schema = BooksSchema()
